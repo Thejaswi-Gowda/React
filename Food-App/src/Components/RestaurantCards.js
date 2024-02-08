@@ -1,6 +1,5 @@
 const RestaurantCards = (props) => (
     <div className='restaurant-card'>
-        {console.log(props.mockData)}
         {
             props.mockData.map((data) => (
                 <div className="restaurant-list">
