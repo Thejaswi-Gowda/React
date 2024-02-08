@@ -113,3 +113,10 @@
     text-decoration: none;
     color: rgb(61, 65, 82);
 }
+
+.filter-btn {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 190px;
+    padding: 5px 5px;
+}
