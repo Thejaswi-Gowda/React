@@ -120,3 +120,32 @@
     margin-left: 190px;
     padding: 5px 5px;
 }
+
+.shimmer-comntainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.shimmer-card {
+    width: 250px;
+    height: 180px;
+    margin: 15px;
+    background-color: rgb(234, 237, 236);
+    border-radius: 10px;
+}
+
+.login-btn {
+    padding: 5px 8px;
+    border: 0;
+    width: 60px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    color: #fc8019;
+}
