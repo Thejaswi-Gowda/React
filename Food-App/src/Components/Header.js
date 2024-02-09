@@ -1,6 +1,15 @@
-import React from 'react'
+import { useEffect, useState } from "react";
 
-const Header = () => (
+const Header = () => {
+
+    const [loginData, setLoginData] = useState("Login");
+
+    const toggleLogin = () => {
+        loginData === "Login" ? setLoginData("Logout") : setLoginData("Login");
+    }
+
+
+    return ( 
     <div className="global-nav">
         <div className="nav-conatiner">
             <a href="#" className="href-link">
@@ -13,9 +22,11 @@ const Header = () => (
                 <li>Help</li>
                 <li>Sign In</li>
                 <li>Cart</li>
+                <button className='login-btn' onClick={toggleLogin}>{loginData}</button>
             </ul>
         </div>
     </div>
-)
+    )
+}
 
 export default Header;
