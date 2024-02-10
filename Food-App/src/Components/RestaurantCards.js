@@ -1,3 +1,5 @@
+import { restoImagesLink } from "../utils/constants";
+
 const RestaurantCards = (props) => (
     <div className='restaurant-card'>
         {
@@ -6,10 +8,10 @@ const RestaurantCards = (props) => (
                     <a href="#">
                         <div className="resto-card">
                             <div className="resto-img">
-                                <img src={data.info.cloudinaryImageId}/>
+                                <img src={restoImagesLink + data.info.cloudinaryImageId} />
                             </div>
                             <div className="resto-details">
-                                <p>{data.restoName}</p>
+                                <p>{data.info.name}</p>
                                 <div className="reato-rating-del-details">
                                     <span>{data.info.avgRatingString}*</span>
                                     <span>{data.info.sla.slaString}</span>

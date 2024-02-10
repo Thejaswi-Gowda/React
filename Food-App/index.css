@@ -116,7 +116,7 @@
 
 .filter-btn {
     cursor: pointer;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 190px;
     padding: 5px 5px;
 }
@@ -148,4 +148,20 @@
 
 .login-btn:hover {
     color: #fc8019;
+}
+
+.resto-filter-container {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.resto-filter-container input {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.resto-filter-container .search-btn {
+    padding: 5px;
+    cursor: pointer;
 }
