@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -17,9 +18,15 @@ const Header = () => {
             </a>
             <div className="other-btn">Other</div>
             <ul className="nav-list">
-                <li>Search</li>
-                <li>Offers</li>
-                <li>Help</li>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/about">About Us</Link>
+                </li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
                 <li>Sign In</li>
                 <li>Cart</li>
                 <button className='login-btn' onClick={toggleLogin}>{loginData}</button>

@@ -20,7 +20,7 @@ const Body = () => {
     }
 
     const filterRestoCards = () => {
-        setFilterRestaurantCard(mockData.filter((item)  => item?.info?.avgRating >= 4));
+        setFilterRestaurantCard(filterRestaurantCards.filter((item)  => item?.info?.avgRating >= 4));
     }
 
     const filterCards = () => {
