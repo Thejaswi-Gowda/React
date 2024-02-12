@@ -165,3 +165,49 @@
     padding: 5px;
     cursor: pointer;
 }
+
+.resto-menu-container {
+    margin: 0 359px;
+    margin-top: 15px;
+}
+
+.resto-data {
+    font-size: 18.2px;
+    line-height: 21.84px;
+    color: rgb(62, 65, 82);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resto-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 144px;
+    max-height: 144px;
+    margin: 10px 0;
+    border-bottom: 0.8px solid rgb(211, 211, 211);
+}
+
+.food-description {
+    margin-top: 20px;
+    color: rgba(40, 44, 63, 0.45);
+}
+
+.food-name {
+    margin-top: 10px;
+    color: rgb(62, 65, 82);
+    font-weight: bold;
+}
+
+.food-price {
+    margin-top: 5px;
+    color: rgb(62, 65, 82);
+}
+
+.food-img img {
+    width: 118px;
+    height: 96px;
+    border-radius: 10px;
+    margin-left: 15px;
+}

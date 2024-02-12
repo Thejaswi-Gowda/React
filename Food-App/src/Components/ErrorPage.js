@@ -8,8 +8,6 @@ const ErrorPage = () => {
             <h1>Opps</h1>
             <h2>Something went wrong!!</h2>
             <h4>{err.data}</h4>
-            <h4>{err.error.message}</h4>
-            <h4>{err.internal}</h4>
             <h4>{err.status}</h4>
             <h4>{err.statusText}</h4>
         </div>
