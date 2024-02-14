@@ -145,6 +145,14 @@
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
+}
+
+.online-status {
+    position: absolute;
+    top: 21px;
+    right: -5px;
+    font-size: 10px;
 }
 
 .login-btn:hover {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useIsActive from "../utils/useIsActive";
 
 const Header = () => {
 
@@ -9,6 +10,8 @@ const Header = () => {
         loginData === "Login" ? setLoginData("Logout") : setLoginData("Login");
     }
 
+    const status = useIsActive();
+    const statusDisplay = status ? "🟢" : "🔴"
 
     return ( 
     <div className="global-nav">
@@ -30,6 +33,7 @@ const Header = () => {
                 <li>Sign In</li>
                 <li>Cart</li>
                 <button className='login-btn' onClick={toggleLogin}>{loginData}</button>
+                <span className="online-status">{statusDisplay}</span>
             </ul>
         </div>
     </div>
